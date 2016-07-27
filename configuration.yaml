@@ -1,0 +1,171 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # C for Celcius, F for Fahrenheit
+  temperature_unit: C
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: UTC
+
+# Track the sun
+sun:
+
+# Allows you to issue voice commands from the frontend
+conversation:
+
+# Enables the frontend
+frontend:
+
+# Checks for available updates
+updater:
+
+# View all events in a logbook
+logbook:
+
+# Enables support for tracking state changes over time.
+history:
+
+# Show links to resources in log and frontend
+
+# Discover some devices automatically
+discovery:
+
+mqtt:
+  broker: 127.0.0.1
+  port: 1883
+
+sensor:
+
+  ### SENSOR F14
+  #- platform: mqtt
+  #  name: "Lounge Temperature"
+  #  state_topic: "home-assistant/10653549/temperature"
+  #  unit_of_measurement: "C"
+
+  #- platform: mqtt
+  #  name: "Lounge Humidity"
+  #  state_topic: "home-assistant/10653549/humidity"
+  #  unit_of_measurement: "%"
+  
+  - platform: mqtt
+    name: "Getraenkelager Temperature"
+    state_topic: "home-assistant/10655657/temperature"
+    unit_of_measurement: "C"
+
+  - platform: mqtt
+    name: "Getraenkelager Humidity"
+    state_topic: "home-assistant/10655657/humidity"
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    name: "Krebslounge Temperature"
+    state_topic: "home-assistant/10616876/temperature"
+    unit_of_measurement: "C"
+
+  - platform: mqtt
+    name: "Krebslounge Humidity"
+    state_topic: "home-assistant/10616876/humidity"
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    name: "Fablab Temperature"
+    state_topic: "home-assistant/10646099/temperature"
+    unit_of_measurement: "C"
+
+  - platform: mqtt
+    name: "Fablab Humidity"
+    state_topic: "home-assistant/10646099/humidity"
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    name: "Werkstatt Temperature"
+    state_topic: "home-assistant/10632858/temperature"
+    unit_of_measurement: "C"
+
+  - platform: mqtt
+    name: "Werkstatt Humidity"
+    state_topic: "home-assistant/10632858/humidity"
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    name: "Lounge (L+F) Temperature"
+    state_topic: "home-assistant/10622392/temperature"
+    unit_of_measurement: "C"
+
+  - platform: mqtt
+    name: "Lounge (L+F) Humidity"
+    state_topic: "home-assistant/10622392/humidity"
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    name: "OR1 Temperature"
+    state_topic: "home-assistant/10646611/temperature"
+    unit_of_measurement: "C"
+
+  - platform: mqtt
+    name: "OR1 Humidity"
+    state_topic: "home-assistant/10646611/humidity"
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    name: "OR2 Temperature"
+    state_topic: "home-assistant/10633936/temperature"
+    unit_of_measurement: "C"
+
+  - platform: mqtt
+    name: "OR2 Humidity"
+    state_topic: "home-assistant/10633936/humidity"
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    name: "OR3 Temperature"
+    state_topic: "home-assistant/10654227/temperature"
+    unit_of_measurement: "C"
+
+  - platform: mqtt
+    name: "OR3 Humidity"
+    state_topic: "home-assistant/10654227/humidity"
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    name: "OR4 Temperature"
+    state_topic: "home-assistant/10617456/temperature"
+    unit_of_measurement: "C"
+
+  - platform: mqtt
+    name: "OR4 Humidity"
+    state_topic: "home-assistant/10617456/humidity"
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    name: "Worlddomination Temperature"
+    state_topic: "home-assistant/10638083/temperature"
+    unit_of_measurement: "C"
+
+  - platform: mqtt
+    name: "Worlddomination Humidity"
+    state_topic: "home-assistant/10638083/humidity"
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    name: "Semi Temperature"
+    state_topic: "home-assistant/10651435/temperature"
+    unit_of_measurement: "C"
+
+  - platform: mqtt
+    name: "Semi Humidity"
+    state_topic: "home-assistant/10651435/humidity"
+    unit_of_measurement: "%"
+
+  - platform: mqtt
+    name: "test Temperature"
+    state_topic: "home-assistant/14026769/temperature"
+    unit_of_measurement: "C"
+
+  - platform: mqtt
+    name: "test Humidity"
+    state_topic: "home-assistant/14026769/humidity"
+    unit_of_measurement: "%"
+
+# weitere esps:
+# F14 - 10653549
+# F16 - 10622392
